@@ -1,0 +1,130 @@
+section#works{
+    width:100%;
+    height:1400px;
+    background-color: #202020;
+    overflow-x: hidden;
+}
+.wrapWorks{
+
+    width:100%;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
+    height:1000px;
+    padding:280px;
+    padding-top:80px;
+    padding-bottom:20px;
+
+}
+.myprofile{
+    border-radius: 50%;
+    width:260px;
+    height:260px;
+    overflow: hidden;
+    border:solid rgb(167, 153, 106) 5px;
+}
+#myProfile{
+   
+    border-radius: 50%;
+    height:260px;
+    width:260px;
+    object-position:8px   ;
+    box-sizing: border-box;
+    filter: grayscale(2);
+    scale:1.15;
+    transition: 300ms;
+}
+#myProfile:hover{
+   
+    filter:none;
+}
+.workInfo{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    text-align: center;
+    position: relative;
+
+
+}
+#workHead{
+    margin-top:40px;
+    font-size:45px;
+    font-weight:bolder;
+    color:lemonchiffon;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 5px #505050;
+}
+
+
+
+.imgTest{
+    position: relative;
+    backface-visibility: hidden;
+    display: block;
+    width:420px;
+    height:445px; 
+    transition: 300ms ease-in ;
+    object-position:-58px;
+   
+}
+.workDiv{
+    border-radius:5px;
+    width:300px;
+    height:410px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 1px 2px 5px 0 rgb(88, 88, 88);
+    
+}
+.game1{
+    position:relative;
+    top:-100%;
+    left:0px;
+    opacity:0;
+    transition: 500ms ease;
+    text-align: center;
+    
+ }
+
+ .text1{
+    font-size:30px;
+    color:rgba(255, 255, 255, 0.932);
+    text-shadow: 0 0 5px black;
+    text-align: center;
+    /* background-color: lemonchiffon; */
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+#aboutProjects{
+    color:white;
+    padding-top:10px;
+    font-size:18px;
+    line-height: 22px;
+    cursor:pointer
+}
+#exp{
+    color:white;
+    font-size: 14px;
+    padding-top:5px;
+    margin:0;
+    line-height:20px;
+    cursor:pointer;
+}
+
+.workDiv:hover .imgTest{
+scale:1.09;
+opacity:0.2;
+
+}
+.workDiv:hover .game1{
+    opacity:1;
+ 
+}
+.workDiv:hover{
+    background: grey;
+ 
+}
